@@ -17,6 +17,49 @@ h1, h2, h3 {
   color: white;
 }
 
+ul {
+  text-align: left;
+}
+
+.links {
+  margin-bottom: 15px;
+
+  border-top: 1px solid white;
+}
+
+.links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #282c34;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links li {
+  float: left;
+  width: 100%;
+}
+
+.links li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 0px;
+  text-decoration: none;
+}
+
+.links li a:hover {
+  background-color: #111;
+}
+
+.links li a:hover {
+  background-color: white;
+  color: #282c34;
+  font-weight: 600;
+}
+
 
 .App-footer h3 {
   background-color: #282c34;
@@ -48,23 +91,16 @@ h1, h2, h3 {
   flex-direction: column;
 }
 
-.Links {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.Links a {
-  display: block;
-  text-decoration: none;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.Bio p {
-  margin-top: 0px;
+.Bio {
+  margin-bottom: 15px;
   padding: 5px;
-  border: solid 3px gray;
+  border: solid 5px #282c34;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .Bio p {
+    border-left: 0;
+    border-right: 0;
+  }
 }
